@@ -14,4 +14,4 @@ SELECT COUNT(*) AS "numero_corsi", `departments`.name AS "dipartimenti"
 FROM `degrees`
 JOIN `departments`
 ON `departments`.`id` = `degrees`.`department_id`
-GROUP BY `department_id`;
+GROUP BY `degrees`.`department_id`;
