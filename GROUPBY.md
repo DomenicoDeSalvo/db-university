@@ -10,3 +10,8 @@ GROUP BY `office_address`;
 
 3. Calcolare la media dei voti di ogni appello d'esame
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT COUNT(*) AS "numero_corsi", `departments`.name AS "dipartimenti"
+FROM `degrees`
+JOIN `departments`
+ON `departments`.`id` = `degrees`.`department_id`
+GROUP BY `department_id`;
